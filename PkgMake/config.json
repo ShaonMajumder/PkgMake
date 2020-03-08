@@ -1,0 +1,8 @@
+{
+	"project_name" : "PkgMake",
+	"version_name" : "0.0.0.0.1",
+	"author_name" : "Shaon Majumder",
+	"author_email_name" : "smazoomder@gmail.com",
+	"tag_list" : ["shaon", "package generator", "library maker"],
+	"console_script_needed" : "False"
+}
