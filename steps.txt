@@ -1,0 +1,7 @@
+generate setup.py
+generate requirements.txt
+generate readme
+push to github
+create realese to github
+make sdist
+upload to pypi
