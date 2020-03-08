@@ -40,16 +40,28 @@ dist
 
 
 if __name__ == '__main__':
+	mode = 'pypi'
+	username = input("Give pypi username : ")
+	password = input("Give pypi password : ")
 	if platform.system() == 'Linux':
-		commands = """pip3 uninstall """+pkgname+""" -y
+		if mode == 'pypi':
+			commands = f"""python3 setup.py sdist
+twine upload dist/* -u """+username+""" -p """+password
+		elif mode == 'local':
+			commands = f"""pip3 uninstall """+pkgname+""" -y
 python3 setup.py sdist bdist_wheel
 python3 setup.py install
 pip3 install --upgrade """+pkgname
+
 	elif platform.system() == 'Windows':
-		commands = """pip3 uninstall """+pkgname+""" -y
+		if mode == 'pypi':
+			commands = f"""python setup.py sdist
+twine upload dist/* -u """+username+""" -p """+password
+		elif mode == 'local':
+			commands = f"""pip3 uninstall """+pkgname+""" -y
 python setup.py sdist bdist_wheel
 python setup.py install
-pip install --upgrade """+pkgname
+pip3 install --upgrade """+pkgname
 
 
 	commands = commands.split("\n")
@@ -59,3 +71,4 @@ pip install --upgrade """+pkgname
 		    print(path, end="")
 
 	cleaning_before_commit(pkgname)
+

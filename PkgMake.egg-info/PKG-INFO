@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PkgMake
+Version: 0.0.0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/ShaonMajumder/PkgMake
+Author: Shaon Majumder
+Author-email: smazoomder@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ShaonMajumder/PkgMake/archive/0.0.0.0.1.tar.gz
+Description: # PkgMake
+        A helper for making pacakages without writing the configuration again and again.
+        Which terminates repeatative tasks.
+Keywords: shaon,package generator,library maker
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,8 @@
+README.md
+setup.py
+PkgMake/PkgMake.py
+PkgMake/__init__.py
+PkgMake.egg-info/PKG-INFO
+PkgMake.egg-info/SOURCES.txt
+PkgMake.egg-info/dependency_links.txt
+PkgMake.egg-info/top_level.txt
