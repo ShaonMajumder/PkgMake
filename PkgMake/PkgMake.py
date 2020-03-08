@@ -1,5 +1,6 @@
 import shaonutil
 import json
+import wheel
 
 with open('config.json', 'r') as f:
     distros_dict = json.load(f)
@@ -36,7 +37,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
   name = '"""+project_name+"""',
   packages = ['"""+project_name+"""'],
-
+  setup_requires=['wheel'],
   version = '"""+version_name+"""',
   long_description=long_description,
   long_description_content_type='text/markdown',
